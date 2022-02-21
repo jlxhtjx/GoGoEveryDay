@@ -7,29 +7,29 @@ func main() {
 	// func 函数名(参数) (返回值)
 
 	/*
-						sayHello()
+							sayHello()
 
-						//返回参数1
-						ret := intSum(1, 2)
-						fmt.Println(ret)
-
-
-
-					//有参，省略参数类型。
-					fmt.Println(intSum2(1, 3))
+							//返回参数1
+							ret := intSum(1, 2)
+							fmt.Println(ret)
 
 
-				ret1 := changeFunc()
-				ret2 := changeFunc(10)
-				ret3 := changeFunc(10, 20)
-				ret4 := changeFunc(10, 20, 30)
-				fmt.Println(ret1, ret2, ret3, ret4)
+
+						//有参，省略参数类型。
+						fmt.Println(intSum2(1, 3))
+
+		ret1 := changeFunc()
+		ret2 := changeFunc(10)
+		ret3 := changeFunc(10, 20)
+		ret4 := changeFunc(10, 20, 30)
+		fmt.Println(ret1, ret2, ret3, ret4)
 
 
-			fmt.Println(funReturnOne())
 
-		// a, b := funReturnTwo()
-		fmt.Println(funReturnTwo())
+				fmt.Println(funReturnOne())
+
+			// a, b := funReturnTwo()
+			fmt.Println(funReturnTwo())
 	*/
 	//return value with name.
 	fmt.Println(funReturnWithName(10, 20))
@@ -55,7 +55,7 @@ func funReturnOne() int {
 
 //可变参要作为最后一个参数。
 func changeFunc(x ...int) int {
-	fmt.Println("%T", x)
+	fmt.Printf("%T\n", x)
 	sum := 0
 	for _, v := range x {
 		sum = sum + v
