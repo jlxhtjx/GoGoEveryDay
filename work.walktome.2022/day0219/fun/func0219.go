@@ -2,40 +2,50 @@ package main
 
 import "fmt"
 
+var num int64 = 100
+
 //func.
 func main() {
 	// func 函数名(参数) (返回值)
 
 	/*
-							sayHello()
+									sayHello()
 
-							//返回参数1
-							ret := intSum(1, 2)
-							fmt.Println(ret)
-
-
-
-						//有参，省略参数类型。
-						fmt.Println(intSum2(1, 3))
-
-		ret1 := changeFunc()
-		ret2 := changeFunc(10)
-		ret3 := changeFunc(10, 20)
-		ret4 := changeFunc(10, 20, 30)
-		fmt.Println(ret1, ret2, ret3, ret4)
+									//返回参数1
+									ret := intSum(1, 2)
+									fmt.Println(ret)
 
 
 
-				fmt.Println(funReturnOne())
+								//有参，省略参数类型。
+								fmt.Println(intSum2(1, 3))
 
-			// a, b := funReturnTwo()
-			fmt.Println(funReturnTwo())
+				ret1 := changeFunc()
+				ret2 := changeFunc(10)
+				ret3 := changeFunc(10, 20)
+				ret4 := changeFunc(10, 20, 30)
+				fmt.Println(ret1, ret2, ret3, ret4)
+
+
+
+						fmt.Println(funReturnOne())
+
+					// a, b := funReturnTwo()
+					fmt.Println(funReturnTwo())
+
+			//return value with name.
+			fmt.Println(funReturnWithName(10, 20))
+
+		funcPrintNum()
 	*/
-	//return value with name.
-	fmt.Println(funReturnWithName(10, 20))
 
 }
 
+func funcPrintNum() {
+	fmt.Println(num)
+}
+
+//直接使用返回的名字作为参数return
 func funReturnWithName(x, y int) (sum, sub int) {
 	sum = x + y
 	sub = x - y
